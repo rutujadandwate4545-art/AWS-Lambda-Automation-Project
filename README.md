@@ -19,26 +19,21 @@ This project automates file uploads and downloads using Python and AWS services.
 
 ## Project Files
 - `main.py` — Main Python application.
-- `requirements.txt` — Python dependencies.
-- `sample.txt` — Sample input file.
-- `automatic_upload_report.csv` — Upload report.
-- `downloaded_report.csv` — Download report.
-- `s3_upload_report.csv` — S3 upload report.
+- `automatic_upload_report_rutuja (3).csv` — Automatic upload report.
+- `s3_upload_report_rutuja.csv` — S3 upload report.
+- `README.md` — Project documentation.
 
 ## Prerequisites
 - Python 3
 - An AWS account
-- AWS CLI configured with appropriate permissions
+- AWS credentials configured securely with the required permissions.
 
 ## Installation
-Install the required Python dependency:
+Install Boto3 if it is not already installed:
 
 ```bash
-pip install -r requirements.txt
+pip install boto3
 ```
-
-## AWS Configuration
-Configure AWS credentials securely using an AWS CLI profile or an IAM role. Never hardcode access keys or secret keys in the source code.
 
 ## Running the Project
 Run:
@@ -48,4 +43,4 @@ python main.py
 ```
 
 ## Security
-Do not commit AWS credentials, passwords, private keys, or sensitive report data to GitHub.
+Never commit AWS access keys, secret keys, passwords, or other sensitive information to GitHub.
